@@ -12,7 +12,7 @@ class Tour extends Model
     use HasFactory, HasUuids;
 
     protected $fillable = [
-        'travel_id', 'name', 'starting_date', 'ending_date', 'price'
+        'travel_id', 'name', 'starting_date', 'ending_date', 'price',
     ];
 
     public function price(): Attribute

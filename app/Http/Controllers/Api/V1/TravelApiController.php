@@ -15,7 +15,8 @@ class TravelApiController extends Controller
     public function index()
     {
         $travel = Travel::where('is_public', true)->paginate();
-        return  TravelResource::collection($travel);
+
+        return TravelResource::collection($travel);
     }
 
     /**
